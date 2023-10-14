@@ -37,7 +37,7 @@ wk.register({
 }, { mode = "x" })
 ```
 
-Direction will be automatically detected based on the selected text and the `mask` option.
+The direction will be automatically detected based on the selected text and the `mask` option.
 
 Alternatively, you can specify the direction manually by passing argument to command:
 
@@ -46,3 +46,9 @@ Alternatively, you can specify the direction manually by passing argument to com
 ## Known issues
 
 - Windows is not supported, PRs are welcome.
+
+## Demo
+
+https://github.com/coffebar/crowtranslate.nvim/assets/3100053/1bf77e1d-c7c6-4b42-9071-7e5049a5e35d
+
+
