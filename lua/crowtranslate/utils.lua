@@ -36,7 +36,12 @@ function M.combine_stdout(cmd, multiline, callback)
       end
     end,
     on_stderr = function(_, data)
-      vim.notify(table.concat(data, "\n"), vim.log.levels.ERROR)
+      if data ~= nil and #data > 0 then
+        local lines = vim.concat(data, "\n")
+        if lines ~= "" then
+          vim.notify(lines, vim.log.levels.ERROR)
+        end
+      end
     end,
   })
 end
